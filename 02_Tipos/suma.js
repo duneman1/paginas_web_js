@@ -103,3 +103,9 @@ console.log(resultado)
 
 resultado = calcularModulo(num1, num2)
 console.log(resultado)
+
+prueba = {}
+if (typeof prueba == 'object') {
+    prueba.estoyloco = 'Si'
+}
+console.log(prueba)

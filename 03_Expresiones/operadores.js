@@ -36,7 +36,7 @@ function asignaciones() {
     return isPar
 } */
 
-function esPar (num) {
+/* function esPar (num) {
     let isPar = true
     // compruebo si NO eres par
     // if (num % 2 != 0) {
@@ -44,6 +44,15 @@ function esPar (num) {
         isPar = false
     } 
     return isPar
+} */
+
+function esPar (num) {
+	let a = 0
+	let isPar = true
+	if (typeof num != 'number'|| (num % 2)) {
+		isPar = false
+	} 
+	return isPar
 }
 
 function esPar2 (num) {
@@ -54,16 +63,24 @@ function esPar2 (num) {
     } 
     return isPar
 }
-asignaciones()
 
-console.log(esPar(15))
 
-console.log('22 es par?', esPar(22))
-console.log('25 es par?', esPar(25))
+function esParFinal (num) {
+	return (typeof num == 'number' && num % 2 == 0) ? true : false
+}
 
-//incrementos()
+// incrementos()
+// asignaciones()
 
-console.log(Boolean(22))
+console.log('22 es par?', esParFinal(22))
+console.log('25 es par?', esParFinal(25))
+console.log('0 es par?', esParFinal(0))
+console.log('Pepe es par?', esParFinal('Pepe'))
+console.log('"" es par?', esParFinal(''))
+console.log(' es par?', esParFinal())
+console.log('true es par?', esParFinal(true))
+console.log('false es par?', esParFinal(false))
+
 
 // falsy: 
 console.log(Boolean(false))
@@ -74,3 +91,18 @@ console.log(Boolean(undefined))
 console.log(Boolean(true))
 console.log(Boolean(109))
 console.log(Boolean('Pepe'))
+
+/* let a = 'Juan'
+let b = 0
+// compruebo si b == 0
+if (!b) {
+    a = 'Pepe'
+}
+console.log(a)
+b = 4
+// compruebo si b != 0
+if (b) {
+    a = 'Luis'
+}
+console.log(a)
+ */

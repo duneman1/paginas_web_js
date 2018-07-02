@@ -106,3 +106,15 @@ if (b) {
 }
 console.log(a)
  */
+
+function compararCadenas()  {
+	let a = "Alex"
+	let b = "Pepepetamo"
+	if (a > b ) {
+		console.log('a es mayor')
+	} else {
+		console.log('b es mayor')
+	}
+}
+
+compararCadenas()

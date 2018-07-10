@@ -27,7 +27,7 @@ function calcularArea(figura, datos) {
 
             let x = 'h'
             datos[x] */
-            for (const key in object) {
+            for (const key in datos) {
                 resultado *= datos[key]
                 
             }
@@ -46,7 +46,7 @@ function calcularArea(figura, datos) {
             break;   
 
         default:
-            break;
+            throw ('Operación no permitida')
     }
 
     return resultado.toFixed(2)
@@ -68,8 +68,18 @@ function probar(){
     figura = 'circulo'
     oDatos = {r:15}
     console.log(calcularArea(figura, oDatos)) 
-    /* figura = 'pentagono'
-    oDatos = {} */
+    figura = 'pentagono'
+    oDatos = {}
+    console.log(calcularArea(figura, oDatos))
+
+    try {
+        let figura = 'pentagono'
+        let oDatos = {}
+        console.log(calcularArea(figura, oDatos))
+    } catch(error) {
+        console.log(error)
+    }
+    
 }
 
 probar()

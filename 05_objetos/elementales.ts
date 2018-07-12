@@ -18,4 +18,4 @@ function numbersTS() {
     console.log(typeof numPrecision)
 }
 
-numbers()
+numbersTS()

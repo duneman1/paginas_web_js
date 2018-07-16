@@ -44,3 +44,12 @@ console.log(aClon)
 console.log(aElegidos)
 console.log ('Original: ')
 console.log(aNombres) */
+
+let aNotas = [[10, 7, 8], [5, 4, 7], [6, 3, 2]]
+console.log(aNotas[1][1])
+
+aNombres = ['Pepe', 'Luis', 'Arancha', 'Rosa', 'Maria']
+
+aNombres.push(['Lorenzo', 'Herminia'])
+aNombres.push(...['Lorenzo', 'Herminia'])
+console.log(aNombres)

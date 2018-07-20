@@ -28,3 +28,7 @@ function CosaRara() {
 // Objeto()
 
 new CosaRara()
+
+
+// THIS -> QUIEN YO DECIDA
+// call() / apply()

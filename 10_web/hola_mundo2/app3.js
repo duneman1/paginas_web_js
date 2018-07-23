@@ -32,4 +32,8 @@ class Apps {
 
 // document.addEventListener('DOMContentLoaded', function() {new Apps()}) //segundo metodo
 
-document.addEventListener('DOMContentLoaded', () => new Apps()) //tercer manera
+// document.addEventListener('DOMContentLoaded', () => new Apps()) //tercer manera
+
+// document.addEventListener('DOMContentLoaded', () => {new const Apps()}) // Cuarta manera las comillas se pueden quitar
+
+document.addEventListener('DOMContentLoaded', () => new Apps())

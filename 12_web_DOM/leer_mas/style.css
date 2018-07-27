@@ -1,0 +1,19 @@
+.h1 {
+    color: coral;
+    background-color: bisque;
+}
+
+
+.hide {
+    display: none;
+}
+
+.mas {
+    border: 1px solid coral;
+    background-color: gray;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: coral
+}
+

@@ -8,9 +8,8 @@ header {
     text-align: center;
 }
 
-
 .normal-header {
-    height: 20vh;
+    height: 20vh;  
     padding: 2rem;
 }
 
@@ -23,7 +22,7 @@ header {
 }
 
 .bajo-header {
-    height: 5rem;
+    height: 4.5rem;
 }
 
 

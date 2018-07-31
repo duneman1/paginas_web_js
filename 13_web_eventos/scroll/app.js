@@ -6,6 +6,7 @@ class App {
         this.header = document.querySelector('header')
         this.parrafoHeader = document.querySelector('header p')
         this.bajoHeader = document.querySelector('#bajo-header')
+
         document.addEventListener('scroll', 
             this.scollDetect.bind(this) )
         this.btnTop.addEventListener('click', 
@@ -29,7 +30,6 @@ class App {
             this.bajoHeader.classList.add('hide')
         }
         
-        
         if (oE.target.scrollingElement.scrollTop > 100) {
             this.divTop.classList.remove('hide')
         } else {
@@ -38,7 +38,13 @@ class App {
     }
 
     subir(oE) {
-        document.scrollingElement.scrollTop = 0
+        //document.scrollingElement.scrollTop = 0
+        //location.assign()
+        //location.href = "#"
+        window.scroll({top: 0, 
+            left: 0, 
+            behavior: 'smooth'
+        })
     }
 }
 
